@@ -235,9 +235,18 @@ h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; color: var(--white); l
 /* Mobile */
 @media (max-width: 720px) {
   body { font-size: 16px; }
-  .nav-inner { height: auto; padding-top: 12px; padding-bottom: 10px; flex-direction: column; align-items: flex-start; gap: 6px; }
-  .nav nav { width: 100%; gap: 18px; }
-  html { scroll-padding-top: 96px; }
+  .nav-inner { height: auto; padding-top: 12px; padding-bottom: 10px; flex-direction: column; align-items: center; gap: 8px; }
+  .brand {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+    border-image: var(--accent-bar) 1;
+  }
+  .nav nav { width: 100%; flex-wrap: wrap; justify-content: center; gap: 4px 18px; overflow: visible; }
+  html { scroll-padding-top: 130px; }
   .hero { padding: 48px 0; }
   .hero-inner { flex-direction: column; text-align: center; gap: 28px; }
   .headshot { width: 180px; height: 180px; }
