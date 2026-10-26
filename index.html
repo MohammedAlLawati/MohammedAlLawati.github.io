@@ -16,16 +16,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#top" class="brand">Mohammed <span>Al Lawati</span></a>
       <nav aria-label="Sections">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
@@ -35,6 +34,7 @@
 
   <main id="top">
     <section class="hero">
+      <span class="deco deco-right deco-top" style="background-image:url(assets/deco/pylon-light.svg)" aria-hidden="true"></span>
       <div class="container hero-inner">
         <img class="headshot" src="assets/headshot.jpg" alt="Portrait of Mohammed Al Lawati" width="240" height="240">
         <div>
@@ -45,13 +45,15 @@
           <div class="actions">
             <a class="btn btn-primary" href="assets/Mohammed_Al_Lawati_CV.pdf" download>Download CV</a>
             <a class="btn" href="https://www.linkedin.com/in/mohammed-al-lawati-8a33b3225" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn" href="mailto:mohjlaw@gmail.com">Email me</a>
+            <a class="btn" href="mailto:mohjlaw@gmail.com">Email Me</a>
           </div>
         </div>
       </div>
     </section>
 
     <section id="about" class="section">
+      <span class="deco deco-left deco-top" style="background-image:url(assets/deco/sun-green.svg)" aria-hidden="true"></span>
+      <span class="deco deco-right deco-bottom" style="background-image:url(assets/deco/panels.svg)" aria-hidden="true"></span>
       <div class="container narrow">
         <h2>About</h2>
         <p>I'm a renewable energy engineer with 3+ years designing and delivering grid-tied solar PV systems at an Omani EPC company. I was the design and stakeholder-approval focal point on PDO's Project NOOR, which installed 2+ MW of residential rooftop PV across the Sultanate.</p>
@@ -65,22 +67,19 @@
     </section>
 
     <section id="experience" class="section alt">
+      <span class="deco deco-left deco-top" style="background-image:url(assets/deco/house.svg)" aria-hidden="true"></span>
+      <span class="deco deco-right deco-bottom" style="background-image:url(assets/deco/pylon-green.svg)" aria-hidden="true"></span>
       <div class="container narrow">
         <h2>Experience</h2>
         <ol class="timeline">
           <li>
             <div class="role-head">
-              <h3>Solar Design Engineer</h3>
-              <span class="date">Aug 2023 – Present</span>
+              <h3>Solar Engineering Intern</h3>
+              <span class="date">Nov 2022 – May 2023</span>
             </div>
             <p class="org">Hussam Technology Company (HTC), Solar Division · Muscat</p>
             <ul>
-              <li>Focal point for design and stakeholder approvals on Project NOOR, Petroleum Development Oman's (PDO) nationwide programme that delivered 2+ MW of grid-tied rooftop PV to employee homes across Oman.</li>
-              <li>Designed grid-tied PV systems for residential, commercial and industrial (C&amp;I) clients in HelioScope, optimising array layout and configuration for energy yield and grid compliance.</li>
-              <li>Delivered the full project lifecycle: site surveys, technical design, procurement, installation and commissioning.</li>
-              <li>Developed Python scripts that generate stakeholder approval packages and residential installation quotes, reducing manual documentation work.</li>
-              <li>Built pricing models and an internal component-price database for faster, more accurate cost estimation.</li>
-              <li>Designed and launched the company website, <a href="https://www.htc.om" target="_blank" rel="noopener">htc.om</a>.</li>
+              <li>Site surveys, HelioScope PV simulations, commissioning and approvals for Project NOOR residential installations.</li>
             </ul>
           </li>
           <li>
@@ -96,21 +95,28 @@
           </li>
           <li>
             <div class="role-head">
-              <h3>Solar Engineering Intern</h3>
-              <span class="date">Nov 2022 – May 2023</span>
+              <h3>Solar Design Engineer</h3>
+              <span class="date">Aug 2023 – Present</span>
             </div>
             <p class="org">Hussam Technology Company (HTC), Solar Division · Muscat</p>
             <ul>
-              <li>Site surveys, HelioScope PV simulations, commissioning and approvals for Project NOOR residential installations.</li>
+              <li>Focal point for design and stakeholder approvals on Project NOOR, Petroleum Development Oman's (PDO) nationwide programme that delivered 2+ MW of grid-tied rooftop PV to employee homes across Oman.</li>
+              <li>Designed grid-tied PV systems for residential, commercial and industrial (C&amp;I) clients in HelioScope, optimising array layout and configuration for energy yield and grid compliance.</li>
+              <li>Delivered the full project lifecycle: site surveys, technical design, procurement, installation and commissioning.</li>
+              <li>Developed Python scripts that generate stakeholder approval packages and residential installation quotes, reducing manual documentation work.</li>
+              <li>Built pricing models and an internal component-price database for faster, more accurate cost estimation.</li>
+              <li>Designed and launched the company website, <a href="https://www.htc.om" target="_blank" rel="noopener">htc.om</a>.</li>
             </ul>
           </li>
         </ol>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="achievements" class="section">
+      <span class="deco deco-left deco-top" style="background-image:url(assets/deco/panels-green.svg)" aria-hidden="true"></span>
+      <span class="deco deco-right deco-bottom" style="background-image:url(assets/deco/sun.svg)" aria-hidden="true"></span>
       <div class="container">
-        <h2>Selected projects</h2>
+        <h2>Key Achievements</h2>
         <div class="cards">
           <article class="card">
             <p class="card-tag">PDO · HTC</p>
@@ -118,53 +124,62 @@
             <p>Nationwide programme bringing grid-tied rooftop solar to PDO employee homes. I led design and stakeholder approvals across 2+ MW of installed capacity.</p>
           </article>
           <article class="card">
-            <p class="card-tag">Feasibility · OQ</p>
-            <h3>Utility solar feasibility study</h3>
-            <p>Techno-economic assessment of a proposed solar facility, combining PVsyst energy-yield simulation with LCOE analysis.</p>
+            <p class="card-tag">Feasibility</p>
+            <h3>Commercial and Residential Scale Solar Feasibility</h3>
+            <p>Techno-economic feasibility studies for commercial- and residential-scale solar PV systems, combining PVsyst energy-yield simulation with LCOE analysis.</p>
           </article>
           <article class="card">
-            <p class="card-tag">Shell Nawafidh</p>
-            <h3>25 MW solar plant, Duqm</h3>
-            <p>Capstone project simulating a 25 MW utility-scale solar PV plant in Duqm as part of the Shell Nawafidh Programme.</p>
+            <p class="card-tag">Cost Estimation</p>
+            <h3>Pricing Models and Component Database</h3>
+            <p>Built pricing models and an internal component-price database that made project cost estimation faster and more accurate and kept bids competitive.</p>
           </article>
           <article class="card">
             <p class="card-tag">Python</p>
-            <h3>Document automation</h3>
+            <h3>Document Automation</h3>
             <p>Scripts that generate stakeholder approval packages and installation quotes automatically, cutting repetitive manual work for the team.</p>
           </article>
           <article class="card">
             <p class="card-tag">Web</p>
             <h3>htc.om</h3>
             <p>Designed and launched Hussam Technology Company's website to strengthen the solar division's online presence.</p>
-            <a class="card-link" href="https://www.htc.om" target="_blank" rel="noopener">Visit site →</a>
+            <a class="card-link" href="https://www.htc.om" target="_blank" rel="noopener">Visit Site →</a>
+          </article>
+          <article class="card">
+            <p class="card-tag">University of Exeter</p>
+            <h3>Pro-Vice-Chancellor's Award</h3>
+            <p>Awarded for academic excellence during my BEng (Hons) in Renewable Energy Engineering, graduating with Upper Second-Class Honours.</p>
           </article>
         </div>
       </div>
     </section>
 
     <section id="skills" class="section alt">
+      <span class="deco deco-left deco-top" style="background-image:url(assets/deco/pylon.svg)" aria-hidden="true"></span>
+      <span class="deco deco-right deco-bottom" style="background-image:url(assets/deco/panels-green.svg)" aria-hidden="true"></span>
       <div class="container narrow">
         <h2>Skills</h2>
         <div class="skill-group">
-          <h3>Solar design &amp; simulation</h3>
-          <ul class="chips"><li>PVsyst</li><li>HelioScope</li><li>SketchUp (3D modelling)</li></ul>
+          <h3>Solar Design &amp; Simulation</h3>
+          <ul class="chips"><li>PVsyst</li><li>HelioScope</li><li>SketchUp (3D Modelling)</li></ul>
         </div>
         <div class="skill-group">
           <h3>Engineering</h3>
-          <ul class="chips"><li>Grid-tied PV design</li><li>Energy yield assessment</li><li>Techno-economic feasibility</li><li>LCOE</li><li>Cost estimation</li><li>Site surveys</li><li>Commissioning</li><li>Net metering</li></ul>
+          <ul class="chips"><li>Grid-Tied PV Design</li><li>Energy Yield Assessment</li><li>Techno-Economic Feasibility</li><li>LCOE</li><li>Cost Estimation</li><li>Site Surveys</li><li>Commissioning</li><li>Net Metering</li></ul>
         </div>
         <div class="skill-group">
-          <h3>Data &amp; automation</h3>
+          <h3>Data &amp; Automation</h3>
           <ul class="chips"><li>Python</li><li>Excel</li><li>Word</li><li>PowerPoint</li></ul>
         </div>
         <div class="skill-group">
           <h3>Languages</h3>
-          <ul class="chips"><li>Arabic (native)</li><li>English (fluent)</li></ul>
+          <ul class="chips"><li>Arabic (Native)</li><li>English (Fluent)</li></ul>
         </div>
       </div>
     </section>
 
     <section id="education" class="section">
+      <span class="deco deco-left deco-bottom" style="background-image:url(assets/deco/sun-green.svg)" aria-hidden="true"></span>
+      <span class="deco deco-right deco-top" style="background-image:url(assets/deco/house.svg)" aria-hidden="true"></span>
       <div class="container narrow">
         <h2>Education</h2>
         <div class="entry">
@@ -184,7 +199,7 @@
           <p>Upper Second-Class Honours (2:1), GPA 3.5. Pro-Vice-Chancellor's Award for Academic Excellence.</p>
         </div>
 
-        <h2 class="sub">Training &amp; certifications</h2>
+        <h2 class="sub">Training &amp; Certifications</h2>
         <ul class="plain">
           <li><strong>Shell Nawafidh Programme</strong>, Shell Oman and Outward Bound Oman, Oct 2023 – May 2024</li>
           <li><strong>PV101: Solar Electric Design and Installation (Grid-Direct)</strong>, Solar Energy International (SEI), Dec 2024</li>
@@ -194,8 +209,10 @@
     </section>
 
     <section id="contact" class="section contact">
+      <span class="deco deco-left deco-bottom" style="background-image:url(assets/deco/panels-light.svg)" aria-hidden="true"></span>
+      <span class="deco deco-right deco-top" style="background-image:url(assets/deco/pylon-light.svg)" aria-hidden="true"></span>
       <div class="container narrow center">
-        <h2>Get in touch</h2>
+        <h2>Get in Touch</h2>
         <p>Open to solar PV, energy storage and power systems roles across the GCC.</p>
         <div class="actions center">
           <a class="btn btn-light" href="mailto:mohjlaw@gmail.com">mohjlaw@gmail.com</a>
