@@ -168,14 +168,13 @@ h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; color: var(--white); l
 /* Project cards */
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
 .card {
-  border: 1px solid var(--line);
-  border-top: 4px solid var(--blue);
+  border: 2px solid var(--blue);
   border-radius: var(--radius);
   padding: 24px;
   background: var(--white);
   transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
 }
-.card:nth-child(even) { border-top-color: var(--green); }
+.card:nth-child(even) { border-color: var(--green); }
 .card:hover { box-shadow: 0 10px 28px rgba(11, 37, 89, 0.12); transform: translateY(-2px); }
 .card-tag {
   display: inline-block;
@@ -230,6 +229,26 @@ h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; color: var(--white); l
 
 .footer { padding: 24px 0; text-align: center; color: var(--white); font-size: 14px; background: var(--blue-dark); }
 
+/* Solar line illustrations */
+.hero, .section { position: relative; overflow: hidden; }
+.hero > .container, .section > .container { position: relative; z-index: 1; }
+.deco {
+  position: absolute;
+  z-index: 0;
+  width: 210px;
+  height: 230px;
+  background: no-repeat center / contain;
+  opacity: 0.18;
+  pointer-events: none;
+}
+.deco-left { left: max(-60px, calc(50% - 640px)); }
+.deco-right { right: max(-60px, calc(50% - 640px)); }
+.deco-top { top: 48px; }
+.deco-bottom { bottom: 40px; }
+.hero .deco, .contact .deco { opacity: 0.22; }
+.hero .deco { width: 220px; height: 280px; top: 20px; }
+.hero .deco-right { right: max(-60px, calc(50% - 660px)); }
+
 /* Mobile */
 @media (max-width: 720px) {
   body { font-size: 16px; }
@@ -242,6 +261,13 @@ h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; color: var(--white); l
   .actions { justify-content: center; }
   .section { padding: 56px 0; }
   .stats { grid-template-columns: 1fr; }
+  .deco { width: 110px; height: 120px; opacity: 0.07; }
+  .deco-left { left: -36px; }
+  .deco-right { right: -36px; }
+  .deco-top { top: 16px; }
+  .deco-bottom { bottom: 16px; }
+  .hero .deco { width: 130px; height: 150px; top: 10px; opacity: 0.12; }
+  .contact .deco { opacity: 0.12; }
 }
 
 @media print {
